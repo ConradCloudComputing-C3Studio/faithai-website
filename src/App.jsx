@@ -416,8 +416,11 @@ function App() {
                   <DollarSign className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Cash App</h3>
-                <p className="text-green-300 font-semibold">$FaithAI</p>
-                <button className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
+                <p className="text-green-300 font-semibold">$DougFaithAI</p>
+                <button 
+                  onClick={() => window.location.href = '/cashapp.html'}
+                  className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300"
+                >
                   Donate Now
                 </button>
               </div>
@@ -428,21 +431,27 @@ function App() {
                   <DollarSign className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Venmo</h3>
-                <p className="text-blue-300 font-semibold">@FaithAI-Ministry</p>
-                <button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
+                <p className="text-blue-300 font-semibold">@DougFaithAI</p>
+                <button 
+                  onClick={() => window.location.href = '/venmo.html'}
+                  className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300"
+                >
                   Donate Now
                 </button>
               </div>
 
-              {/* Crypto */}
-              <div className="bg-gradient-to-br from-orange-600/20 to-orange-800/20 border border-orange-500/30 rounded-2xl p-6 text-center hover:border-orange-400/50 transition-all duration-300 group">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="h-8 w-8 text-white" />
+              {/* PayPal */}
+              <div className="bg-gradient-to-br from-yellow-600/20 to-yellow-800/20 border border-yellow-500/30 rounded-2xl p-6 text-center hover:border-yellow-400/50 transition-all duration-300 group">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <DollarSign className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Crypto</h3>
-                <p className="text-orange-300 font-semibold">BTC, ETH, USDC</p>
-                <button className="mt-4 bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
-                  Get Address
+                <h3 className="text-xl font-bold text-white mb-2">PayPal</h3>
+                <p className="text-yellow-300 font-semibold">Secure Donation</p>
+                <button 
+                  onClick={() => window.location.href = '/paypal.html'}
+                  className="mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300"
+                >
+                  Donate Now
                 </button>
               </div>
             </div>

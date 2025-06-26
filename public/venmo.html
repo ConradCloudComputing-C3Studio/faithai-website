@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venmo Donation - FaithAI</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Header -->
+    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-purple-500/20 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span class="text-2xl font-bold text-white">FaithAI</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-purple-400 transition-colors">Home</a>
+                    <a href="/#agents" class="text-gray-300 hover:text-purple-400 transition-colors">Agents</a>
+                    <a href="/#stats" class="text-gray-300 hover:text-purple-400 transition-colors">Impact</a>
+                    <a href="/#donate" class="text-gray-300 hover:text-purple-400 transition-colors">Support</a>
+                    <a href="/#contact" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Venmo <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">Donation</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                    Give via Venmo: @DougFaithAI
+                </p>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 md:p-12 text-center">
+                <div class="mb-8">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Donate via Venmo
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Support our AI-powered ministry through Venmo
+                    </p>
+                </div>
+
+                <!-- Venmo Details -->
+                <div class="bg-gradient-to-br from-white/5 to-blue-500/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 mb-8">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-white mb-4">Venmo Username</h3>
+                        <p class="text-3xl font-bold text-blue-300 mb-6">@DougFaithAI</p>
+                        
+                        <a href="https://venmo.com/DougFaithAI" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
+                            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Open Venmo Profile
+                        </a>
+                    </div>
+
+                    <!-- QR Code Placeholder -->
+                    <div class="mt-8 pt-8 border-t border-white/10">
+                        <h4 class="text-xl font-semibold text-white mb-4">QR Code</h4>
+                        <div class="w-48 h-48 bg-gradient-to-br from-slate-700/50 to-slate-800/50 border-2 border-dashed border-blue-400/30 rounded-2xl flex items-center justify-center mx-auto">
+                            <div class="text-center">
+                                <svg class="h-16 w-16 text-blue-400/50 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                                </svg>
+                                <p class="text-blue-400/70 text-sm">QR Code Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back to Home -->
+                <div class="text-center">
+                    <a href="/" class="inline-flex items-center bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
+                        <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        </svg>
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900/80 border-t border-purple-500/20 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400">
+                © 2024 FaithAI. Spreading faith through technology.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
